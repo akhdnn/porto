@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+@import "tailwindcss";
+
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+  body {
+    @apply font-sans text-gray-800 antialiased;
+    
+    /* 👇 Tambahkan/pastikan dua baris ini ada untuk efek bintik-bintik */
+    background-color: #f8f8f8; /* Warna dasar abu-abu sangat muda */
+    background-image: radial-gradient(circle, #e5e5e5 1px, rgba(0, 0, 0, 0) 1px); /* Membuat pola titik */
+    background-size: 28px 28px; /* Mengatur jarak antar titik */
+  }
+}

@@ -1,0 +1,27 @@
+---
+import '../styles/global.css';
+
+// Mendefinisikan properti yang bisa diterima oleh layout ini
+export interface Props {
+	title: string;
+	description: string;
+}
+
+// Mengambil nilai props yang dikirim dari halaman (misal: index.astro)
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="https://framerusercontent.com/images/DcY4zKT27pnqbAPSSNLjUhP2zU.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
