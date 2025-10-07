@@ -1,58 +1,21 @@
 ---
-// src/pages/index.astro (Layout Presisi Sesuai Diagram)
+// src/pages/index.astro (Fokus pada Hero & Case Study)
 
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
-import GridCard from '../components/GridCard.astro';
 import Hero from '../components/Hero.astro';
+import CaseStudy from '../components/CaseStudy.astro';
 ---
 
 <Layout 
-    title="Portfolio - Final Grid" 
-    description="A precise bento grid based on the provided diagram."
+    title="Portfolio Akhdan"
+    description="A showcase of selected works."
 >
     <Header />
-    <Hero />
 
-    <main class="p-4 md:p-8 pt-28 max-w-screen-xl mx-auto">
-        <div class="grid grid-cols-2 md:grid-cols-4 auto-rows-[120px] gap-4">
-
-            <div class="md:col-start-1 md:row-start-1 md:row-span-2"><GridCard><p>1x1</p></GridCard></div>
-
-            <div class="md:col-start-2 md:col-span-2 md:row-start-1 md:row-span-4"><GridCard><p>2x2</p></GridCard></div>
-
-            <div class="md:col-start-4 md:row-start-1 md:row-span-4"><GridCard><p>1x2</p></GridCard></div>
-
-            <div class="md:col-start-1 md:row-start-3 md:row-span-2"><GridCard><p>1x1</p></GridCard></div>
-            
-            <div class="md:row-span-2 md:col-start-1 md:col-span-2 md:row-start-5"><GridCard><p>2x1</p></GridCard></div>
-
-            <div class="md:col-start-3 md:row-start-5 md:row-span-2"><GridCard><p>1x1</p></GridCard></div>
-
-            <div class="md:col-start-4 md:row-start-5 md:row-span-2"><GridCard><p>1x1</p></GridCard></div>
-            
-            <div class="md:col-start-1 md:row-start-7 md:row-span-2"><GridCard><p>1x1</p></GridCard></div>
-            
-            <div class="md:col-start-2 md:row-start-7 md:row-span-2"><GridCard><p>1x1</p></GridCard></div>
-            
-            <div class="md:col-start-3 md:row-start-7 md:row-span-4"><GridCard><p>1x2</p></GridCard></div>
-            
-            <div class="md:col-start-4 md:row-start-7 md:row-span-2"><GridCard><p>1x1</p></GridCard></div>
-            
-            <div class="md:col-start-1 md:col-span-2 md:row-start-9 md:row-span-4"><GridCard><p>2x2</p></GridCard></div>
-            
-            <div class="md:col-start-4 md:row-start-9 md:row-span-2"><GridCard><p>1x1</p></GridCard></div>
-            
-            <div class="md:col-start-3 md:row-start-11 md:row-span-2"><GridCard><p>1x1</p></GridCard></div>
-            
-            <div class="md:col-start-4 md:row-start-11 md:row-span-2"><GridCard><p>1x1</p></GridCard></div>
-            
-            <div class="md:row-span-2 md:col-start-1 md:col-span-2 md:row-start-13"><GridCard><p>2x1</p></GridCard></div>
-
-            <div class="md:col-start-3 md:row-start-13 md:row-span-2"><GridCard><p>1x1</p></GridCard></div>
-            
-            <div class="md:col-start-4 md:row-start-13 md:row-span-2"><GridCard><p>1x1</p></GridCard></div>
-
-        </div>
+    <main>
+        <Hero />
+        <CaseStudy />
     </main>
+    
 </Layout>
