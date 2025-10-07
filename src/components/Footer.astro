@@ -1,21 +1,35 @@
 ---
 // src/components/Footer.astro
 ---
-<footer class="px-4 md:px-8 max-w-7xl mx-auto py-12 flex flex-wrap justify-between items-center gap-6 text-sm">
-    <div class="flex items-center gap-3 text-gray-500">
-        <div class="w-10 h-10 bg-gray-200 rounded-full"></div> 
-        <div>
-            <p>Built in the 🇮🇩, shipping globally.</p>
-            <p>One day at <a href="#" class="underline">letsgettogether.io</a></p>
-            <p>Follow me on <a href="#" class="underline">X</a></p>
+<footer class="p-4 md:p-8">
+    <div class="max-w-screen-xl mx-auto bg-gray-100 rounded-full p-4 flex justify-between items-center shadow-sm border border-gray-200/80">
+        
+        <a href="mailto:hello@akhdan.space" class="flex items-center gap-3 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-600 group-hover:text-black transition-colors">
+                <path d="m3 3 3 9-3 9 19-9Z"></path>
+                <path d="M6 12h16"></path>
+            </svg>
+            <span class="text-gray-800 group-hover:text-black font-medium transition-colors hidden md:inline">
+                hello@akhdan.space
+            </span>
+        </a>
+
+        <div class="flex items-center gap-2">
+            <a href="#" class="p-2 rounded-full hover:bg-gray-200/70 transition-colors">
+                <img src="https://framerusercontent.com/images/kHso2fT8PbDMbB7p2h9a3z2gM.svg" alt="X Icon" class="w-6 h-6">
+            </a>
+            <a href="#" class="p-2 rounded-full hover:bg-gray-200/70 transition-colors">
+                <img src="https://framerusercontent.com/images/3K4s7gB5A8Fw2TUjY5hY2d8s.svg" alt="Instagram Icon" class="w-6 h-6">
+            </a>
+            <a href="#" class="p-2 rounded-full hover:bg-gray-200/70 transition-colors">
+                 <img src="https://framerusercontent.com/images/IeAAb2h626fT23sSj3gSgAg6g.svg" alt="Dribbble Icon" class="w-6 h-6">
+            </a>
+            <a href="#" class="p-2 rounded-full hover:bg-gray-200/70 transition-colors">
+                 <img src="https://framerusercontent.com/images/IDpBa03jBHYOD31slB0D2s4s.svg" alt="Behance Icon" class="w-6 h-6">
+            </a>
+             <a href="#" class="p-2 rounded-full hover:bg-gray-200/70 transition-colors">
+                 <img src="https://framerusercontent.com/images/YSSp3d5z9gLoP2n2j2cT0vnB5g.svg" alt="LinkedIn Icon" class="w-6 h-6">
+            </a>
         </div>
-    </div>
-
-    <a href="#" class="bg-gray-100 hover:bg-gray-200 transition-colors rounded-full px-5 py-2 font-medium">
-        Book a call
-    </a>
-
-    <div class="text-gray-400">
-        @bksam 2025
     </div>
 </footer>

@@ -1,7 +1,7 @@
 ---
 // src/components/CaseStudy.astro
 ---
-<section class="py-20 md:py-32 px-4">
+<section id="work" class="py-20 md:py-32 px-4">
     <div class="max-w-screen-xl mx-auto flex flex-col gap-12">
 
         <h2 class="text-center text-4xl font-medium tracking-tight text-gray-900">
@@ -11,52 +11,57 @@
         <div class="flex flex-col gap-8">
 
             {/* --- KARTU 1: MEMEX --- */}
-            <div class="
-                bg-white/40 backdrop-blur-xl     
-                rounded-3xl border border-white/50 shadow-xl shadow-gray-200/50 
-                p-8 md:p-12
-            ">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div class="flex flex-col gap-6">
-                        <h3 class="text-3xl font-bold">Memex</h3>
-                        <p class="text-gray-500">🇩🇪 Germany, angel investors</p>
-                        <p class="text-gray-700 leading-relaxed">
-                            Organise, take notes and discuss the web without context switches & copy pasting. By yourself, with your peers & enhanced by AI.
-                        </p>
-                        <a href="#" class="flex justify-between items-center pt-4 border-t border-gray-200/80 text-gray-700 hover:text-black transition-colors">
-                            <span class="font-semibold">Open case</span>
-                            <span>&rarr;</span>
-                        </a>
+            <a href="#" class="block group">
+                <div class="card-glow grid grid-cols-1 md:grid-cols-5 items-stretch bg-white/40 backdrop-blur-xl rounded-3xl border border-white/50 shadow-lg shadow-gray-200/50 overflow-hidden transition-transform duration-300 ease-in-out group-hover:scale-[1.02] group-hover:-rotate-1">
+                    {/* Kolom Teks (2/5 dari lebar) */}
+                    <div class="md:col-span-2 p-6 md:p-10 flex flex-col">
+                        <div class="flex-grow">
+                            <p class="text-gray-500 mb-1">🇩🇪 Germany, angel investors</p>
+                            <h3 class="text-3xl font-bold mb-4">Memex</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Organise, take notes and discuss the web without context switches & copy pasting. By yourself, with your peers & enhanced by AI.
+                            </p>
+                        </div>
+                        <div class="mt-8">
+                             <div class="inline-flex justify-between items-center w-full p-3 bg-white group-hover:bg-gray-50 rounded-full border border-gray-900/10 transition-colors">
+                                <span class="font-semibold text-gray-800 px-2">Open case</span>
+                                <span class="text-gray-400 pr-2 transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <img src="https://placehold.co/800x600/111827/ffffff?text=Memex+UI" alt="Memex UI" class="rounded-xl shadow-lg"/>
+                    {/* Kolom Gambar (3/5 dari lebar) */}
+                    <div class="md:col-span-3 bg-gray-900/5 h-full flex items-center justify-center p-8 md:p-0">
+                        <img src="https://i.imgur.com/k942a6l.png" alt="Memex UI" class="rounded-md shadow-lg w-full"/>
                     </div>
                 </div>
-            </div>
+            </a>
+
 
             {/* --- KARTU 2: QUANTIA --- */}
-             <div class="
-                bg-white/40 backdrop-blur-xl 
-                rounded-3xl border border-white/50 shadow-xl shadow-gray-200/50 
-                p-8 md:p-12
-            ">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div class="flex flex-col gap-6">
-                        <h3 class="text-3xl font-bold">Quantia</h3>
-                        <p class="text-gray-500">🇺🇾 Uruguay, self-funded</p>
-                        <p class="text-gray-700 leading-relaxed">
-                            Earn interest, borrow, buy, sell crypto with security infrastructure and asset protection features.
-                        </p>
-                        <a href="#" class="flex justify-between items-center pt-4 border-t border-gray-200/80 text-gray-700 hover:text-black transition-colors">
-                            <span class="font-semibold">Open case</span>
-                            <span>&rarr;</span>
-                        </a>
+             <a href="#" class="block group">
+                <div class="card-glow grid grid-cols-1 md:grid-cols-5 items-stretch bg-white/40 backdrop-blur-xl rounded-3xl border border-white/50 shadow-lg shadow-gray-200/50 overflow-hidden transition-transform duration-300 ease-in-out group-hover:scale-[1.02] group-hover:rotate-1">
+                    {/* Kolom Teks (2/5 dari lebar) */}
+                    <div class="md:col-span-2 p-6 md:p-10 flex flex-col">
+                        <div class="flex-grow">
+                            <p class="text-gray-500 mb-1">🇺🇾 Uruguay, self-funded</p>
+                            <h3 class="text-3xl font-bold mb-4">Quantia</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                               Earn interest, borrow, buy, sell crypto with security infrastructure and asset protection features.
+                            </p>
+                        </div>
+                        <div class="mt-8">
+                             <div class="inline-flex justify-between items-center w-full p-3 bg-white group-hover:bg-gray-50 rounded-full border border-gray-900/10 transition-colors">
+                                <span class="font-semibold text-gray-800 px-2">Open case</span>
+                                <span class="text-gray-400 pr-2 transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <img src="https://placehold.co/800x600/e2e8f0/334155?text=Quantia+UI" alt="Quantia UI" class="rounded-xl shadow-lg"/>
+                    {/* Kolom Gambar (3/5 dari lebar) */}
+                    <div class="md:col-span-3 bg-gray-900/5 h-full flex items-center justify-center p-8 md:p-0">
+                        <img src="https://i.imgur.com/KDCVd5K.png" alt="Quantia UI" class="rounded-md shadow-lg w-full"/>
                     </div>
                 </div>
-            </div>
+            </a>
 
         </div>
     </div>

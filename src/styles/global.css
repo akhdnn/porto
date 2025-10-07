@@ -12,8 +12,17 @@
     @apply font-sans text-gray-800 antialiased;
     
     /* 👇 Tambahkan/pastikan dua baris ini ada untuk efek bintik-bintik */
-    background-color: #F6F6F4; /* Warna dasar abu-abu sangat muda */
+    background-color: #EEECEA; /* Warna dasar abu-abu sangat muda */
     background-image: radial-gradient(circle, #e5e5e5 1px, rgba(0, 0, 0, 0) 1px); /* Membuat pola titik */
     background-size: 28px 28px; /* Mengatur jarak antar titik */
   }
 }
+
+<style>
+    .card-glow {
+        transition: all 0.3s ease-in-out;
+    }
+    .card-glow:hover {
+        box-shadow: 0 0 15px 5px rgba(150, 150, 180, 0.15), 0 0 40px 20px rgba(150, 150, 180, 0.1);
+    }
+</style>

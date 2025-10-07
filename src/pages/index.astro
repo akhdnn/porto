@@ -1,10 +1,13 @@
 ---
-// src/pages/index.astro (Fokus pada Hero & Case Study)
+// src/pages/index.astro
 
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import CaseStudy from '../components/CaseStudy.astro';
+import About from '../components/About.astro';
+import Connect from '../components/Connect.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout 
@@ -13,9 +16,34 @@ import CaseStudy from '../components/CaseStudy.astro';
 >
     <Header />
 
-    <main>
-        <Hero />
-        <CaseStudy />
-    </main>
+    <div class="relative overflow-x-clip">
+
+        <img 
+            src="https://i.imgur.com/8Q1k5p1.png" 
+            alt="Binder clip sticker"
+            class="hidden lg:block absolute top-20 -left-16 w-40 rotate-12 shadow-lg -z-10"
+        >
+
+        <main>
+            <Hero />
+            <CaseStudy />
+            <About />
+            <Connect />
+        </main>
+        
+        <img 
+            src="https://i.imgur.com/sC3mY7k.png"
+            alt="Paperclip sticker"
+            class="hidden lg:block absolute top-1/2 -right-12 w-32 -rotate-[30deg] shadow-lg -z-10"
+        >
+
+        <img
+            src="https://i.imgur.com/Vz2y3x1.png"
+            alt="Sticky note sticker"
+            class="hidden lg:block absolute bottom-96 -left-20 w-48 -rotate-12 shadow-xl -z-10"
+        >
+
+    </div>
     
+    <Footer />
 </Layout>
