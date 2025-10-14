@@ -5,26 +5,34 @@
             Selected works from <br> 2024 to the present
         </h2>
 
-        <div class="flex flex-col gap-24 md:gap-32">
+        <div class="flex flex-col gap-24 md:gap-32 max-w-full">
 
-            <div>
-                <a href="#" class="group relative bg-gray-100/80 rounded-2xl md:rounded-3xl border border-gray-200/80 p-8 shadow-lg overflow-hidden flex justify-center max-w-5xl mx-auto aspect-[3/2]">
+            <!-- 1. Bungkus semuanya dalam satu div induk -->
+            <div class="max-w-4xl"> 
+                {/* Lebar maksimum dan posisi tengah sekarang diatur di sini */}
+
+                <a href="#" class="group relative bg-gray-100/80 rounded-2xl md:rounded-3xl border border-gray-200/80 p-8 shadow-lg overflow-hidden flex justify-center items-center aspect-[4/3]">
+                    {/* Kelas max-w-* dan mx-auto telah dihapus dari sini */}
+                    
+                    {/* Gambar pendukung (kiri) */}
                     <img 
                         src="/sumbucardsticker1.png" 
                         alt="Sticker Sumbu 1"
-                        class="absolute top-1/2 -translate-y-1/2 left-4 w-60 h-auto object-contain -rotate-[10deg] opacity-80 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:rotate-[-15deg] group-hover:scale-105"
+                        class="absolute z-0 top-1/2 -translate-y-1/2 left-4 w-60 h-auto object-contain -rotate-[10deg] transition-all duration-300 ease-out group-hover:translate-x-24 group-hover:scale-90"
                     />
+                    {/* Gambar pendukung (kanan) */}
                     <img 
                         src="/sumbucardsticker2.png" 
                         alt="Sticker Sumbu 2"
-                        class="absolute top-1/2 -translate-y-1/2 right-4 w-64 h-auto object-contain rotate-[10deg] opacity-80 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:rotate-[15deg] group-hover:scale-105"
+                        class="absolute z-0 top-1/2 -translate-y-1/2 right-4 w-64 h-auto object-contain rotate-[10deg] transition-all duration-300 ease-out group-hover:-translate-x-24 group-hover:scale-90"
                     />
                     
+                    {/* Konten Utama */}
                     <div class="relative z-10 flex flex-col items-center gap-6 w-full max-w-2xl">
                         <img 
                             src="/sumbucardthumbnail.png" 
                             alt="Sumbu UI" 
-                            class="rounded-lg w-full transition-transform duration-500 ease-in-out group-hover:scale-105 aspect-[4/3] object-cover" 
+                            class="rounded-lg w-full transition-transform duration-300 ease-in-out group-hover:scale-110"
                         />
                         <div class="w-full text-center">
                             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -42,14 +50,18 @@
                     </div>
                 </a>
                 
-                <div class="mt-6 px-2">
+                <!-- 2. Blok Teks Deskripsi -->
+                <div class="mt-6"> 
+                    {/* Kelas 'px-2' dihapus agar perataan tepi lurus dengan kartu di atas */}
                     <div class="flex justify-between items-start gap-4">
+                        {/* Kolom Kiri: Judul & Deskripsi */}
                         <div>
                             <h3 class="text-xl md:text-2xl font-bold text-gray-900">Sumbu</h3>
                             <p class="text-gray-600 leading-relaxed max-w-xl mt-1">
                                 One-stop platform untuk pencarian kerja, pelatihan keterampilan, dan wawancara berbasis AI.
                             </p>
                         </div>
+                        {/* Kolom Kanan: Tahun & Peran */}
                         <div class="text-right flex-shrink-0">
                             <p class="font-semibold text-gray-800">2024</p>
                             <p class="text-gray-500">Product Design</p>
@@ -58,75 +70,124 @@
                 </div>
             </div>
 
-            <div>
-                 <a href="#" class="group block relative bg-gray-100/80 rounded-2xl md:rounded-3xl border border-gray-200/80 p-8 shadow-lg overflow-hidden">
-                    <div class="relative z-10 flex flex-col items-center gap-6">
-                        <div class="relative w-full max-w-4xl">
-                            <img 
-                                src="https://i.imgur.com/KDCVd5K.png" 
-                                alt="Quantia UI Static" 
-                                class="rounded-lg shadow-2xl w-full transition-all duration-500 opacity-100 group-hover:opacity-0 group-hover:scale-105"
-                            />
-                            <img 
-                                src="https://i.imgur.com/3Q3p2x2.gif" 
-                                alt="Quantia UI Animated" 
-                                class="absolute inset-0 rounded-lg shadow-2xl w-full h-full object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100 group-hover:scale-105"
-                            />
-                        </div>
-                        <div class="w-full max-w-3xl text-center">
-                            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                               <span class="bg-white text-gray-800 font-semibold px-6 py-3 rounded-full shadow-md border border-gray-200 transition-transform duration-300 hover:scale-105 cursor-pointer">Learn More</span>
-                               <span class="bg-gray-900 text-white font-semibold px-6 py-3 rounded-full shadow-md border border-gray-900 transition-transform duration-300 hover:scale-105 cursor-pointer">Live Site</span>
-                            </div>
-                            <p class="text-gray-500 text-sm md:text-base mt-6">
-                                Use Case: Securely earn interest, borrow, and trade crypto assets.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <div class="mt-6 px-2">
-                    <div class="flex justify-between items-start gap-4">
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold text-gray-900">Quantia</h3>
-                            <p class="text-gray-600 leading-relaxed max-w-xl mt-1">
-                                Earn interest, borrow, buy, sell crypto with security infrastructure and asset protection features.
-                            </p>
-                        </div>
-                        <div class="text-right flex-shrink-0">
-                            <p class="font-semibold text-gray-800">2024</p>
-                            <p class="text-gray-500">Product Design</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- 1. Bungkus semuanya dalam satu div induk -->
+            <div class="max-w-4xl"> 
+                {/* Lebar maksimum dan posisi tengah sekarang diatur di sini */}
 
-            <div>
-                 <a href="#" class="group block relative bg-gray-100/80 rounded-2xl md:rounded-3xl border border-gray-200/80 p-8 shadow-lg overflow-hidden">
-                    <div class="relative z-10 flex flex-col items-center gap-6">
+                <a href="#" class="group relative bg-gray-100/80 rounded-2xl md:rounded-3xl border border-gray-200/80 p-8 shadow-lg overflow-hidden flex justify-center items-center aspect-[4/3]">
+                    {/* Kelas max-w-* dan mx-auto telah dihapus dari sini */}
+                    
+                    {/* Gambar pendukung (kiri) */}
+                    <img 
+                        src="/sumbucardsticker1.png" 
+                        alt="Sticker Sumbu 1"
+                        class="absolute z-0 top-1/2 -translate-y-1/2 left-4 w-60 h-auto object-contain -rotate-[10deg] transition-all duration-300 ease-out group-hover:translate-x-24 group-hover:scale-90"
+                    />
+                    {/* Gambar pendukung (kanan) */}
+                    <img 
+                        src="/sumbucardsticker2.png" 
+                        alt="Sticker Sumbu 2"
+                        class="absolute z-0 top-1/2 -translate-y-1/2 right-4 w-64 h-auto object-contain rotate-[10deg] transition-all duration-300 ease-out group-hover:-translate-x-24 group-hover:scale-90"
+                    />
+                    
+                    {/* Konten Utama */}
+                    <div class="relative z-10 flex flex-col items-center gap-6 w-full max-w-2xl">
                         <img 
-                            src="https://i.imgur.com/k942a6l.png" 
-                            alt="Memex UI" 
-                            class="rounded-lg shadow-2xl w-full max-w-4xl transition-transform duration-500 ease-in-out group-hover:scale-105"
+                            src="/sumbucardthumbnail.png" 
+                            alt="Sumbu UI" 
+                            class="rounded-lg w-full transition-transform duration-300 ease-in-out group-hover:scale-110"
                         />
-                         <div class="w-full max-w-3xl text-center">
+                        <div class="w-full text-center">
                             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                                <span class="bg-white text-gray-800 font-semibold px-6 py-3 rounded-full shadow-md border border-gray-200 transition-transform duration-300 hover:scale-105 cursor-pointer">Learn More</span>
-                                <span class="bg-gray-900 text-white font-semibold px-6 py-3 rounded-full shadow-md border border-gray-900 transition-transform duration-300 hover:scale-105 cursor-pointer">Live Site</span>
+                                <span class="bg-white text-gray-800 font-semibold px-6 py-3 rounded-full shadow-md border border-gray-200 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                                    Learn More
+                                </span>
+                                <span class="bg-gray-900 text-white font-semibold px-6 py-3 rounded-full shadow-md border border-gray-900 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                                    Live Site
+                                </span>
                             </div>
                             <p class="text-gray-500 text-sm md:text-base mt-6">
-                                Use Case: Organise, take notes and discuss the web without context switches.
+                                Use Case: A one-stop platform for job searching and AI-based interviews.
                             </p>
                         </div>
                     </div>
                 </a>
-                 <div class="mt-6 px-2">
+                
+                <!-- 2. Blok Teks Deskripsi -->
+                <div class="mt-6"> 
+                    {/* Kelas 'px-2' dihapus agar perataan tepi lurus dengan kartu di atas */}
                     <div class="flex justify-between items-start gap-4">
+                        {/* Kolom Kiri: Judul & Deskripsi */}
                         <div>
-                            <h3 class="text-xl md:text-2xl font-bold text-gray-900">Memex</h3>
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900">Sumbu</h3>
                             <p class="text-gray-600 leading-relaxed max-w-xl mt-1">
-                                Organise, take notes and discuss the web without context switches & copy pasting. By yourself, with your peers & enhanced by AI.
+                                One-stop platform untuk pencarian kerja, pelatihan keterampilan, dan wawancara berbasis AI.
                             </p>
                         </div>
+                        {/* Kolom Kanan: Tahun & Peran */}
+                        <div class="text-right flex-shrink-0">
+                            <p class="font-semibold text-gray-800">2024</p>
+                            <p class="text-gray-500">Product Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1. Bungkus semuanya dalam satu div induk -->
+            <div class="max-w-4xl"> 
+                {/* Lebar maksimum dan posisi tengah sekarang diatur di sini */}
+
+                <a href="#" class="group relative bg-gray-100/80 rounded-2xl md:rounded-3xl border border-gray-200/80 p-8 shadow-lg overflow-hidden flex justify-center items-center aspect-[4/3]">
+                    {/* Kelas max-w-* dan mx-auto telah dihapus dari sini */}
+                    
+                    {/* Gambar pendukung (kiri) */}
+                    <img 
+                        src="/sumbucardsticker1.png" 
+                        alt="Sticker Sumbu 1"
+                        class="absolute z-0 top-1/2 -translate-y-1/2 left-4 w-60 h-auto object-contain -rotate-[10deg] transition-all duration-300 ease-out group-hover:translate-x-24 group-hover:scale-90"
+                    />
+                    {/* Gambar pendukung (kanan) */}
+                    <img 
+                        src="/sumbucardsticker2.png" 
+                        alt="Sticker Sumbu 2"
+                        class="absolute z-0 top-1/2 -translate-y-1/2 right-4 w-64 h-auto object-contain rotate-[10deg] transition-all duration-300 ease-out group-hover:-translate-x-24 group-hover:scale-90"
+                    />
+                    
+                    {/* Konten Utama */}
+                    <div class="relative z-10 flex flex-col items-center gap-6 w-full max-w-2xl">
+                        <img 
+                            src="/sumbucardthumbnail.png" 
+                            alt="Sumbu UI" 
+                            class="rounded-lg w-full transition-transform duration-300 ease-in-out group-hover:scale-110"
+                        />
+                        <div class="w-full text-center">
+                            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                                <span class="bg-white text-gray-800 font-semibold px-6 py-3 rounded-full shadow-md border border-gray-200 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                                    Learn More
+                                </span>
+                                <span class="bg-gray-900 text-white font-semibold px-6 py-3 rounded-full shadow-md border border-gray-900 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                                    Live Site
+                                </span>
+                            </div>
+                            <p class="text-gray-500 text-sm md:text-base mt-6">
+                                Use Case: A one-stop platform for job searching and AI-based interviews.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 2. Blok Teks Deskripsi -->
+                <div class="mt-6"> 
+                    {/* Kelas 'px-2' dihapus agar perataan tepi lurus dengan kartu di atas */}
+                    <div class="flex justify-between items-start gap-4">
+                        {/* Kolom Kiri: Judul & Deskripsi */}
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900">Sumbu</h3>
+                            <p class="text-gray-600 leading-relaxed max-w-xl mt-1">
+                                One-stop platform untuk pencarian kerja, pelatihan keterampilan, dan wawancara berbasis AI.
+                            </p>
+                        </div>
+                        {/* Kolom Kanan: Tahun & Peran */}
                         <div class="text-right flex-shrink-0">
                             <p class="font-semibold text-gray-800">2024</p>
                             <p class="text-gray-500">Product Design</p>
