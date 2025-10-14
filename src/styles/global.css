@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
 
 @import "tailwindcss";
 
@@ -11,8 +11,9 @@
   body {
     @apply font-sans text-gray-800 antialiased;
     
-    background-color: #EDF0F4;
+    background-color: #ffffff;
     position: relative;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     /* background-image: radial-gradient(circle, #e5e5e5 1px, rgba(0, 0, 0, 0) 1px); 
     background-size: 28px 28px; */
   }
@@ -33,13 +34,8 @@
   }
 }
 
-
-
 <style>
-    .card-glow {
-        transition: all 0.3s ease-in-out;
-    }
-    .card-glow:hover {
-        box-shadow: 0 0 15px 5px rgba(150, 150, 180, 0.15), 0 0 40px 20px rgba(150, 150, 180, 0.1);
+    .transition-bouncy {
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
 </style>
