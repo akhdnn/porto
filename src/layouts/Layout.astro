@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import GradualBlur from '../components/GradualBlur.jsx';
+
 
 // Mendefinisikan properti yang bisa diterima oleh layout ini
 export interface Props {
@@ -17,12 +19,21 @@ const { title, description } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="https://framerusercontent.com/images/DcY4zKT27pnqbAPSSNLjUhP2zU.png" />
+		<link rel="icon" type="image/png" href="/icon_tab.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="fixed top-0 left-0 w-full h-20 bg-gradient-to-b from-[#F6F6F4] to-transparent z-40 pointer-events-none"></div>
+		<GradualBlur
+			target="page"
+			position="top"
+			height="5rem"
+			strength={1.5}
+			divCount={8}
+			client:idle
+			zIndex={-60}
+		/>
+		<div class="fixed top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent z-40 pointer-events-none"></div>
 		<slot />
 
 		<div id="cursor-tooltip" class="fixed top-0 left-0 pointer-events-none z-50 opacity-0 transition-opacity duration-200">
