@@ -3,22 +3,26 @@
 ---
 <section id="connect" class="py-20 md:py-32 px-4 text-black">
     <div class="max-w-screen-xl mx-auto flex flex-col items-center gap-16">
-        <h3 class="text-2xl font-medium text-gray-800">Letters sent to this site</h3>
+        <h3 class="text-2xl font-medium text-gray-800">Letters sent to connect with me</h3>
 
-        <div class="relative w-full h-64 flex justify-center items-center group">
-            <div class="absolute w-full max-w-lg h-48 bg-white border border-gray-200 rounded-2xl shadow-lg transition-transform duration-500 ease-out transform rotate-6 group-hover:rotate-8 group-hover:-translate-y-2">
-                <img src="/favicon.svg" alt="Stamp" class="absolute top-4 right-4 w-8 h-8 filter grayscale opacity-50">
+        {/* Container untuk tumpukan gambar */}
+        <div class="relative w-full h-80 flex justify-center items-center group">
+
+            <!-- {/* Gambar 3 (Paling Bawah) */}
+            <div class="absolute w-full max-w-lg h-48 transition-transform duration-500 ease-out transform rotate-6 -translate-y-16 group-hover:rotate-8 group-hover-translate-y-8">
+                <img src="/postcard1.png" alt="Image 3" class="w-full h-full object-cover rounded-2xl shadow-lg">
             </div>
 
-            <div class="absolute w-full max-w-lg h-48 bg-white border border-gray-200 rounded-2xl shadow-lg transition-transform duration-500 ease-out transform -rotate-3 group-hover:-rotate-4 group-hover:-translate-y-4 p-6 flex items-start">
-                <p class="text-gray-600">This is soo tuff</p>
-                <img src="/favicon.svg" alt="Stamp" class="absolute top-4 right-4 w-8 h-8 filter grayscale opacity-50">
+            {/* Gambar 2 (Tengah) */}
+            <div class="absolute w-full max-w-lg h-48 transition-transform duration-500 ease-out transform -rotate-3 -translate-y-8 group-hover:-rotate-4 group-hover:-translate-y-">
+                <img src="/postcard2.png" alt="Image 2" class="w-full h-full object-cover rounded-2xl shadow-lg">
+            </div> -->
+            
+            {/* Gambar 1 (Paling Atas) */}
+            <div class="absolute w-full max-w-lg h-48 transition-transform duration-500 ease-out transform -rotate-5 group-hover:-rotate-2 group-hover:scale-90">
+                <img src="/postcard3.png" alt="Image 1" class="w-full h-full object-cover rounded-2xl shadow-lg">
             </div>
             
-            <div class="absolute w-full max-w-lg h-48 bg-white border border-gray-200 rounded-2xl shadow-lg transition-transform duration-500 ease-out transform rotate-1 group-hover:rotate-2 group-hover:-translate-y-6 p-6 flex items-start">
-                <p class="text-gray-600">Cute feature! Sending loves from Indonesia!</p>
-                <img src="/favicon.svg" alt="Stamp" class="absolute top-4 right-4 w-8 h-8 filter grayscale opacity-50">
-            </div>
         </div>
 
         <a href="mailto:hello@akhdan.space" class="mt-8 inline-flex items-center gap-2 bg-black text-white font-semibold px-5 py-3 rounded-full shadow-md hover:bg-zinc-800 transition-transform duration-300 hover:scale-105">

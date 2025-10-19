@@ -1,18 +1,21 @@
 ---
 // src/components/Hero.astro
+import HeroAnimation from './HeroAnimation.jsx';
+
+// Definisikan gambar dan posisi stiker
+const stickers = [
+    { src: "/[branding]_sticker.png", style: { top: '50%', left: '5%', transform: 'rotate(10deg)  scale(1.8)' } },
+    { src: "/[animation]_sticker.png", style: { top: '30%', left: '50%', transform: 'rotate(15deg)  scale(1.8)' } },
+    { src: "/[website]_sticker.png", style: { top: '50%', left: '60%', transform: 'rotate(-15deg)  scale(1.8)' } },
+    { src: "/[mobile]_sticker.png", style: { top: '20%', left: '15%', transform: 'rotate(5deg) scale(1.8)' } }
+
+];
 ---
-<section id="home" class="flex items-center justify-center text-left px-4 py-32 lg:py-40 min-h-[80vh]">
+
+<section id="home" class="flex items-center justify-center text-left px-4 py-24 lg:py-40 min-h-[100vh]">
     <div class="max-w-6xl flex flex-col gap-6">
-
-        <p class="text-left text-lg text-gray-800">Hello, I'm Akhdan</p>
-
-        <h1 class="text-4xl md:text-6xl font-bold tracking-normal text-gray-900 leading-tight">
-            I'm helping digital founders create unique, empathic product 
-            <span class="relative inline-block whitespace-nowrap">experiences.
-                <!-- <span class="sticker sticker-branding">✨ branding</span>
-                <span class="sticker sticker-animation">animation</span> -->
-            </span>
-        </h1>
-
+        <p class="text-left text-lg text-gray-800">👋 Yo, I'm Akhdan</p>
+        
+        <HeroAnimation stickers={stickers} client:visible />
     </div>
 </section>
