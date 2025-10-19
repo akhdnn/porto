@@ -1,5 +1,3 @@
-// src/scripts/main.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -7,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
         root: null,
         rootMargin: '0px',
-        // Ubah nilai threshold dari 0.5 menjadi 0.2
         threshold: 0.2 
     };
 

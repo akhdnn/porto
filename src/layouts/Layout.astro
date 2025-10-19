@@ -2,14 +2,11 @@
 import '../styles/global.css';
 import GradualBlur from '../components/GradualBlur.jsx';
 
-
-// Mendefinisikan properti yang bisa diterima oleh layout ini
 export interface Props {
 	title: string;
 	description: string;
 }
 
-// Mengambil nilai props yang dikirim dari halaman (misal: index.astro)
 const { title, description } = Astro.props;
 ---
 
