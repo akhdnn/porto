@@ -8,23 +8,28 @@ import CaseStudy from '../components/CaseStudy.astro';
 import About from '../components/About.astro';
 import Connect from '../components/Connect.astro';
 import Footer from '../components/Footer.astro';
+
+const navLinks = [
+    { href: '#home', label: 'Home', navlink: 'home' },
+    { href: '#work', label: 'Work', navlink: 'work' },
+    { href: '#about', label: 'About', navlink: 'about' },
+    { href: '#connect', label: 'Connect', navlink: 'connect' }
+];
 ---
 
 <Layout 
     title="Portfolio Akhdan"
     description="A showcase of selected works."
 >
-    <Header />
+    <Header links={navLinks} />
 
     <div class="relative overflow-x-clip">
-
         <main>
             <Hero />
             <CaseStudy />
             <About />
             <Connect />
         </main>
-
     </div>
     
     <Footer />

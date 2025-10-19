@@ -5,25 +5,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
 
     const observerOptions = {
-        root: null, // observes intersections relative to the viewport
+        root: null,
         rootMargin: '0px',
-        threshold: 0.5 // trigger when 50% of the section is visible
+        // Ubah nilai threshold dari 0.5 menjadi 0.2
+        threshold: 0.2 
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Remove active classes from all nav links
                 navLinks.forEach(link => {
                     link.classList.remove('text-gray-900', 'bg-gray-200/50');
                     link.classList.add('text-gray-500');
                 });
 
-                // Get the corresponding nav link
                 const id = entry.target.getAttribute('id');
                 const activeLink = document.querySelector(`.nav-link[data-navlink="${id}"]`);
 
-                // Add active classes to the current nav link
                 if (activeLink) {
                     activeLink.classList.add('text-gray-900', 'bg-gray-200/50');
                     activeLink.classList.remove('text-gray-500');
@@ -32,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Observe each section
     sections.forEach(section => {
         observer.observe(section);
     });

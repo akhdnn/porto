@@ -1,27 +1,52 @@
 ---
 // src/components/About.astro
+import BounceCards from './BounceCards.jsx';
+
+// Daftar gambar yang akan ditampilkan
+const images = [
+    "/photography2.jpeg",
+    "/the_beach.jpeg",
+    "/jakarta.jpeg",
+    "/personal_photo.jpeg"
+];
+
+// Gaya transformasi untuk setiap kartu
+const transformStyles = [
+    "rotate(6deg) translate(-180px)", 
+    "rotate(-1deg) translate(-60px)",                 
+    "rotate(5deg) translate(60px)",
+    "rotate(-4deg) translate(180px)"
+
+];
 ---
-<section id="about" class="py-20 md:py-32 px-4 bg-[#F6F6F4]">
-    <div class="max-w-screen-xl mx-auto flex flex-col gap-16">
+<section id="about" class="py-20 md:py-32 px-4 text-gray-800">
+    <div class="max-w-screen-xl mx-auto flex flex-col items-center gap-16">
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="md:col-span-1">
-                <h2 class="text-4xl font-medium">Hello.</h2>
-            </div>
-            <div class="md:col-span-2">
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    I'm Akhdan, a UI designer from Indonesia. I spent the last 5 years crafting designs in the digital product space. After taking a year off to focus on personal projects, I'm now looking for something exciting to work on.
+        <BounceCards
+            client:visible
+            images={images}
+            transformStyles={transformStyles}
+            containerWidth={500}
+            containerHeight={250}
+            animationDelay={0.5}
+            animationStagger={0.1}
+            easeType="elastic.out(1, 0.5)"
+
+            cardWidth={220}
+            cardHeight={280}
+        />
+
+        <div class="max-w-2xl w-full grid grid-cols-[auto,1fr] gap-x-8">
+            <p class="text-gray-500">About me</p>
+            <div class="text-gray-700 font-medium leading-relaxed space-y-6">
+                <p>
+                   Hi there!  I’m Akhdan, a designer that loves to build great products with delightful interfaces.
                 </p>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="md:col-span-1">
-                <h3 class="text-xl font-medium text-gray-500">How I Can Help</h3>
-            </div>
-            <div class="md:col-span-2">
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    I help teams identify business opportunities and collaborate with stakeholders to develop effective solutions. From user research and design strategy to UI/UX design and testing, I streamline projects to deliver products to market efficiently across both web and mobile apps.
+                <p>
+                    I love working in the realm between design and code. Some things that make me excited are Design Systems, Animation, and making interfaces feel fun and human. After taking a year off to focus on personal projects, I'm now looking for something exciting to work on.
+                </p>
+                <p>
+                    I grew up in Bekasi just outside of Jakarta, Indonesia and come from a background of studying System Information. Outside of work I'm obsessed with photography and graphic design.
                 </p>
             </div>
         </div>
