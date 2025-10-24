@@ -46,7 +46,7 @@ const AnimatedContent = ({
         trigger: el,
         start: `top ${startPct}%`,
         toggleActions: 'play none none none',
-        once: true
+        // once: true
       }
     });
 
