@@ -37,7 +37,21 @@ const articleNavLinks = [
         </aside>
 
         <main class="w-full md:flex-1 font-sans text-gray-800">
-            <div class="max-w-3xl mx-auto pt-24 md:pt-32 pb-16 md:pb-24">
+            <div class="max-w-4xl mx-auto pt-24 md:pt-32 pb-16 md:pb-24">
+                
+
+                <div class="mb-12 grid grid-cols-3 grid-rows-2 gap-4 md:gap-6 h-[300px] md:h-[500px]">
+                    <div class="col-span-2 row-span-1 bg-[#F7F6F7] p-4 rounded-2xl overflow-hidden flex items-center justify-center">
+                        <img src="/sumbucardthumbnail.png" alt="Sumbu Dashboard on Laptop" class="object-contain w-full h-full" />
+                    </div>
+                    <div class="col-span-1 row-span-1 bg-[#F7F6F7] p-4 rounded-2xl overflow-hidden flex items-center justify-center">                            <img src="/veloracardthumbnail.png" alt="Sumbu App on Phone" class="object-contain h-full" />
+                        </div>
+                    <div class="col-span-3 row-span-1 bg-[#F7F6F7] p-4 rounded-2xl overflow-hidden flex items-center justify-center">
+                        <img src="/sumbucardsticker3.png" alt="Sumbu UI Element" class="object-contain w-full h-auto" />
+                    </div>
+                </div>
+        
+
                 <div class="mb-8">
                     <h1 class="text-4xl md:text-6xl font-bold text-gray-900">Sumbu</h1>
                     <p class="mt-2 text-xl md:text-2xl text-gray-500">An all-in-one platform for accessible jobs and skills training</p>
@@ -77,69 +91,81 @@ const articleNavLinks = [
                                 </p>
                             </div>
                         </div>
-                    </div> 
+                    </div>
 
                     <div class="space-y-16">
                         <section id="problem">
                             <h2 class="text-3xl font-bold text-gray-900 mb-6">The Problem</h2>
                             <div class="space-y-4 text-lg text-gray-700 leading-relaxed">
                                 <p>
-                                In Indonesia, 7 out of 10 young unemployed individuals are junior high and high school graduates who struggle to enter the workforce. They face a frustrating cycle: no experience means no job, and no job means no experience.                        
+                                    Indonesia faces a significant employment challenge among its youth, particularly for junior and senior high school graduates. According to BPS data, 7 out of 10 young unemployed individuals in Indonesia come from this educational background. They often lack the practical skills and confidence needed to enter the workforce.
                                 </p>
                                 <p>
-                                On the other side, the nation's economic backbone (Micro, Small, and Medium Enterprises or MSMEs) struggles to find reliable, work-ready employees efficiently. This disconnect creates a significant barrier to economic growth and individual opportunity.
-                             </p>
+                                    On the other hand, MSMEs, which contribute 61% of the national GDP, struggle to recruit work-ready employees quickly and efficiently. The manual and lengthy recruitment process hinders their growth.
+                                </p>
                             </div>
                         </section>
+
                         <section id="process">
                             <h2 class="text-3xl font-bold text-gray-900 mb-6">My Design Process</h2>
                             <div class="space-y-8 text-lg text-gray-700 leading-relaxed">
                                 <div>
-                                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">1. User Research</h3>
-                                    <p>We used a mixed-method approach, including secondary research from the WHO and Indonesian Ministry of Health, plus in-depth interviews. Key findings were inconsistency, lack of motivation, poor information flow, and limited community coordination.</p>
+                                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">1. Empathize</h3>
+                                    <p>I began with in-depth research through online surveys and interviews with young job seekers, MSME owners, and training institutions. The key findings were that 72% of job seekers find it difficult to find jobs that match their skills, and 48% of MSME owners struggle to find work-ready employees.</p>
                                 </div>
                                 <div>
-                                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">2. Wireframing & Iteration</h3>
-                                    <p>I started with low-fidelity wireframes to establish the core layout and information architecture, allowing for rapid concept testing of the main dashboard, mission pages, and reporting forms.</p>
+                                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">2. Define</h3>
+                                    <p>From the research, I identified that job seekers lack confidence during interviews, while MSMEs lack the time for lengthy processes. I synthesized these problems into user personas to identify core needs and formulated "How-Might-We" questions to guide ideation, such as, "How might we help youth get jobs quickly without a complex CV?".</p>
                                 </div>
                                 <div>
-                                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">3. High-Fidelity Design</h3>
-                                    <p>In this phase, I developed a clean and motivating visual identity. The blue and white color palette was chosen to evoke feelings of health and trust. I designed a system of cards, icons, and progress indicators to make information scannable and provide satisfying feedback.</p>
+                                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">3. Ideate</h3>
+                                    <p>Our team brainstormed various solutions, focusing on features that directly address user pain points, such as a centralized platform for job vacancies, skills training modules, and interview simulations.</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">4. Prototype & Test</h3>
+                                    <p>I developed the design iteratively, from sketches to high-fidelity prototypes, using a design system for consistency. I then conducted usability testing with 10 potential users using the System Usability Scale (SUS) method.</p>
                                 </div>
                             </div>
                         </section>
+
                         <section id="solution">
                             <h2 class="text-3xl font-bold text-gray-900 mb-6">The Solution</h2>
                             <div class="space-y-4 text-lg text-gray-700 leading-relaxed">
-                                <p>BASMI is a comprehensive platform that empowers users with the tools they need to fight dengue effectively.</p>
+                                 <p>The result is Sumbu, an integrated platform designed to bridge the gap between job seekers, MSMEs, and training institutions. Sumbu offers a comprehensive solution through three main features.</p>
                             </div>
                             <div class="my-10 space-y-8">
-                                <img src="/basmicardthumbnail.png" alt="BASMI App Interface" class="rounded-2xl shadow-2xl w-full">
+                                 <img src="/sumbucardthumbnail.png" alt="Sumbu App Interface" class="rounded-2xl shadow-2xl w-full">
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                                    <img src="/basmicardsticker_03.png" alt="Draining Mission Feature" class="rounded-2xl shadow-lg w-full">
-                                    <img src="/basmicardsticker_04.png" alt="Covering Mission Feature" class="rounded-2xl shadow-lg w-full">
+                                     <img src="/sumbucardsticker5.png" alt="CV Feature" class="rounded-2xl shadow-lg w-full">
+                                     <img src="/sumbucardsticker1.png" alt="AI Interview Feature" class="rounded-2xl shadow-lg w-full">
                                 </div>
-                                <img src="/basmicardsticker_05.png" alt="Map Feature" class="rounded-2xl shadow-lg w-full">
                             </div>
                              <div class="text-lg text-gray-700 leading-relaxed">
                                 <h3 class="text-2xl font-semibold text-gray-800 mb-4">Key Features:</h3>
                                 <ul class="list-disc list-inside space-y-3">
-                                    <li><strong>3M Quests:</strong> A gamified system where users complete prevention tasks to earn points and climb a community leaderboard.</li>
-                                    <li><strong>Dengue-Prone Area Reporting:</strong> Allows users to photograph and geotag potential mosquito breeding grounds, creating a real-time risk map.</li>
-                                    <li><strong>Heatmap:</strong> A visual map showing reported risk areas to help users and local authorities identify hotspots.</li>
-                                    <li><strong>Community Events & Schedules:</strong> A centralized hub for local cleanup events and official fogging schedules.</li>
+                                    <li><strong>Efficient Job Search:</strong> Users can apply for jobs without complicated document requirements and monitor their application status in real-time.</li>
+                                    <li><strong>AI-Based Interview Practice:</strong> To address the lack of confidence, we provide an AI-powered interview practice feature that offers immediate feedback and scores.</li>
+                                    <li><strong>Personalized Skills Training:</strong> The platform offers various training programs with certifications from MSMEs, some of which are BNSP-standardized.</li>
                                 </ul>
                             </div>
                         </section>
+
                         <section id="reflection">
                             <h2 class="text-3xl font-bold text-gray-900 mb-6">Results & Reflection</h2>
-                            <div class="space-y-4 text-lg text-gray-700 leading-relaxed">
-                                <p>We conducted two rounds of usability testing with Maze. The initial prototype scored an 80 on the System Usability Scale (SUS). After iterating on the design, the revised prototype achieved an SUS score of 88, falling into the "Excellent" category.</p>
-                                <p>This project reinforced the importance of understanding user psychology. The problem wasn't a lack of information, but a lack of motivation. By applying gamification and social engagement, we designed a solution that empowers users to build lasting habits.</p>
+                            <div class="space-y-8 text-lg text-gray-700 leading-relaxed">
+                                <div>
+                                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Quantitative Results</h3>
+                                    <p>From our usability testing session, we achieved a SUS Score of 92, 100% user goal achievement, and an average task completion time of 36 seconds. This indicates a very high level of usability and an efficient workflow.</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Reflection & Learnings</h3>
+                                    <p>This project confirmed the importance of quantitative testing like SUS to validate design hypotheses. Based on user feedback, we made several design iterations, such as changing colors to improve contrast and adding a confirmation flow. This shows that good design is a result of a continuous process of listening and adapting.</p>
+                                </div>
                             </div>
                         </section>
                     </div>
                 </div>
             </div>
         </main>
-    </Layout>
+    </div>
+</Layout>

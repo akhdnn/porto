@@ -1,14 +1,42 @@
 ---
+import AnimatedContent from './AnimatedContent'
 ---
 <section id="work" class="py-20 md:py-32 px-4">
   <div class="max-w-screen-xl mx-auto flex flex-col gap-12">
+    <AnimatedContent
+      client:visible
+      distance={100}
+      direction="vertical"
+      reverse={false}
+      duration={0.5}
+      ease="power3.out"
+      initialOpacity={0}
+      animateOpacity
+      scale={1}
+      threshold={0.2}
+      delay={0.1}
+    >
     <h2 class="text-center text-4xl font-medium tracking-tight text-gray-900">
       Selected works from <br /> 2024 to the present
     </h2>
+    </AnimatedContent>
 
     <div class="flex flex-col gap-24 md:gap-32 w-full items-center">
-      <div class="max-w-full w-5xl h-2xl">
 
+      <AnimatedContent
+        client:visible
+        distance={100}
+        direction="vertical"
+        reverse={false}
+        duration={1}
+        ease="power3.out"
+        initialOpacity={0}
+        animateOpacity
+        scale={1}
+        threshold={0.1}
+        delay={0.2}
+      >
+      <div class="max-w-full w-5xl h-2xl">
         <a
           href="/sumbu"
           class="group relative bg-[#F7F6F7] rounded-2xl md:rounded-3xl p-8 shadow-lg overflow-hidden flex justify-center items-center"
@@ -95,7 +123,21 @@
           </div>
         </div>
       </div>
+      </AnimatedContent>
 
+      <AnimatedContent
+        client:visible
+        distance={100}
+        direction="vertical"
+        reverse={false}
+        duration={1}
+        ease="power3.out"
+        initialOpacity={0}
+        animateOpacity
+        scale={1}
+        threshold={0.1}
+        delay={0.2}
+      >
       <div class="max-w-full w-5xl h-2xl">
 
         <a
@@ -179,7 +221,21 @@
           </div>
         </div>
       </div>
+      </AnimatedContent>
 
+      <AnimatedContent
+        client:visible
+        distance={100}
+        direction="vertical"
+        reverse={false}
+        duration={1}
+        ease="power3.out"
+        initialOpacity={0}
+        animateOpacity
+        scale={1}
+        threshold={0.1}
+        delay={0.2}
+      >
       <div class="max-w-full w-5xl h-2xl">
 
         <a
@@ -283,6 +339,7 @@
           </div>
         </div>
       </div>
+      </AnimatedContent>
     </div>
   </div>
 </section>
