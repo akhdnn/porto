@@ -4,13 +4,11 @@ import { gsap } from 'gsap';
 const HeroAnimation = ({ stickers }) => {
   const heroRef = useRef(null);
   const stickersRef = useRef([]);
-  // State untuk menyimpan rotasi awal dari file .astro
   const [initialRotations, setInitialRotations] = useState([]);
 
   useEffect(() => {
     const stickerElements = stickersRef.current;
     
-    // Simpan rotasi awal dari inline style saat komponen pertama kali dimuat
     if (initialRotations.length === 0 && stickerElements.length > 0) {
       const rotations = stickerElements.map(el => {
         const transform = el.style.transform;
@@ -27,13 +25,11 @@ const HeroAnimation = ({ stickers }) => {
         stickerElements.forEach((sticker, index) => {
             const isLeft = index < Math.floor(stickerElements.length / 2);
             const moveX = isLeft ? -1 : 1;
-            // Ambil rotasi awal untuk stiker ini
             const initialRotation = initialRotations[index] || 0;
 
             gsap.to(sticker, {
                 x: progress * 400 * moveX,
                 y: progress * -400,
-                // Tambahkan rotasi animasi ke rotasi awal
                 rotation: initialRotation + (progress * (isLeft ? -45 : 45)),
                 duration: 0.8,
                 ease: 'power3.out',
@@ -47,7 +43,7 @@ const HeroAnimation = ({ stickers }) => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [initialRotations]); // Tambahkan initialRotations sebagai dependency
+  }, [initialRotations]);
 
   return (
     <div ref={heroRef} className="relative">
