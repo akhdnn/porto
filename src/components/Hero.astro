@@ -1,19 +1,29 @@
 ---
-import HeroAnimation from './HeroAnimation.jsx';
-
-const stickers = [
-    { src: "/[branding]_sticker.png", style: { top: '50%', left: '5%', transform: 'rotate(10deg)  scale(1.8)' } },
-    { src: "/[animation]_sticker.png", style: { top: '30%', left: '50%', transform: 'rotate(15deg)  scale(1.8)' } },
-    { src: "/[website]_sticker.png", style: { top: '50%', left: '60%', transform: 'rotate(-15deg)  scale(1.8)' } },
-    { src: "/[mobile]_sticker.png", style: { top: '20%', left: '15%', transform: 'rotate(5deg) scale(1.8)' } }
-
-];
 ---
 
-<section id="home" class="flex items-center justify-center text-left px-4 py-24 lg:py-40 min-h-[100vh]">
-    <div class="max-w-6xl flex flex-col gap-6">
-        <p class="text-left text-lg text-gray-800">👋 Yo, I'm Akhdan</p>
+<section id="home" class="flex items-center justify-center text-left px-4 py-24 lg:py-40 min-h-[90vh]">
+    <div class="max-w-4xl flex flex-col gap-8">
         
-        <HeroAnimation stickers={stickers} client:visible />
+        <h1 class="text-4xl md:text-6xl font-bold tracking-normal text-gray-900 leading-tight">
+            Akhdan adalah seorang desainer, membantu industri digital melalui 
+            <span class="text-gray-700"> Branding</span>, 
+            <span class="text-gray-700"> Website</span>, dan 
+            <span class="text-gray-700"> Mobile</span>.
+        </h1>
+
+        <div class="flex flex-row gap-4 mt-4">
+            <a 
+                href="#connect"
+                class="inline-block bg-black text-white font-semibold text-base px-5 py-3 rounded-full shadow-md hover:bg-zinc-800 transition-transform duration-300 hover:scale-105"
+            >
+                Work with Me
+            </a>
+            <a 
+                href="#about"
+                class="inline-block bg-gray-100 text-gray-800 font-semibold text-base px-5 py-3 rounded-full shadow-md hover:bg-gray-200 transition-transform duration-300 hover:scale-105"
+            >
+                More about Me
+            </a>
+        </div>
     </div>
 </section>
