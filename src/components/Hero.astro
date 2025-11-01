@@ -1,14 +1,45 @@
 ---
+import TextType from './TextType.jsx';
 ---
 
 <section id="home" class="flex items-center justify-center text-left px-4 py-24 lg:py-40 min-h-[90vh]">
     <div class="max-w-4xl flex flex-col gap-8">
         
+        {/* Status "Available" */}
+        <div class="inline-flex items-center gap-2 self-start rounded-full bg-white/70 backdrop-blur-lg border border-gray-200/80 px-4 py-2">
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+          </span>
+          <span class="text-sm font-medium text-green-700">
+            Available for freelance
+          </span>
+        </div>
+
         <h1 class="text-4xl md:text-6xl font-bold tracking-normal text-gray-900 leading-tight">
-            Akhdan adalah seorang desainer, membantu industri digital melalui 
-            <span class="text-gray-700"> Branding</span>, 
-            <span class="text-gray-700"> Website</span>, dan 
-            <span class="text-gray-700"> Mobile</span>.
+            Akhdan is a UI/UX designer, working with digital founders on building 
+            <TextType
+                as="span"
+                text={[
+                    "digital brands",
+                    "websites",
+                    "mobile apps"
+                ]}
+                typingSpeed={100}
+                deletingSpeed={50}
+                pauseDuration={1500}
+                loop={true}
+                
+                {/* === PERUBAHAN DI SINI === */}
+                textColors={[
+                    "#4287f6", // Tailwind orange-500
+                    "#34a853", // Tailwind blue-500
+                    "#ea4335"  // Tailwind red-500
+                ]}
+                {/* className text-gray-700 dihapus agar warna di atas bisa tampil */}
+                cursorClassName="text-gray-700" 
+                client:visible 
+            />.
         </h1>
 
         <div class="flex flex-row gap-4 mt-4">
