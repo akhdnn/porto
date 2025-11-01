@@ -7,7 +7,6 @@ const images = [
     "/jakarta.jpeg",
     "/personal_photo.jpeg"
 ];
-
 const transformStyles = [
     "rotate(6deg) translate(-180px)", 
     "rotate(-1deg) translate(-60px)",                 
@@ -26,7 +25,8 @@ const transformStyles = [
             containerWidth={500}
             containerHeight={250}
             animationDelay={0.5}
-            animationStagger={0.1}
+     
+           animationStagger={0.1}
             easeType="elastic.out(1, 0.5)"
 
             cardWidth={220}
@@ -36,15 +36,29 @@ const transformStyles = [
         <div class="max-w-2xl w-full grid grid-cols-[auto,1fr] gap-x-8">
             <p class="text-gray-500">About me</p>
             <div class="text-gray-700 font-medium text-xl leading-relaxed space-y-6">
+    
                 <p>
                     I'm Akhdan, a designer who loves making digital interactions feel alive.
                 </p>
                 <p>
-                    After a year of independent exploration on personal projects, I am eager to apply my skills and gain experience in a collaborative environment.                
+                    After a year of independent exploration on personal projects, I am eager to apply my skills and gain experience in a collaborative environment.
                 </p>
                 <p>
-                    I enjoy complex challenges and am ready to make a real contribution. Let's connect if you have an exciting project.
+                    I enjoy complex challenges and am ready to make a real contribution.
+                    Let's connect if you have an exciting project.
                 </p>
+                
+                <div class="pt-2 text-center">
+                    <a 
+                        href="/resume.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="inline-block bg-black text-white font-semibold text-base px-5 py-2 rounded-full shadow-md hover:bg-zinc-800 transition-transform duration-300 hover:scale-105"
+                    >
+                        View Resume
+                    </a>
+                </div>
+                
             </div>
         </div>
 

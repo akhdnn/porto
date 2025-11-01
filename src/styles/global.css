@@ -11,7 +11,7 @@
   body {
     @apply font-sans text-gray-800 antialiased;
     
-    background-color: #ffffff;
+    background-color: #fdfdfd;
     position: relative;
     font-family: 'Plus Jakarta Sans', sans-serif;
     /* background-image: radial-gradient(circle, #e5e5e5 1px, rgba(0, 0, 0, 0) 1px); 

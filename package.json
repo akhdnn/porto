@@ -9,12 +9,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/preact": "^4.1.1",
-    "@astrojs/react": "^4.4.0",
+    "@astrojs/preact": "^4.1.2",
+    "@astrojs/react": "^4.4.1",
     "@tailwindcss/vite": "^4.1.14",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
-    "astro": "^5.14.1",
+    "astro": "^5.15.3",
     "framer-motion": "^12.23.22",
     "gsap": "^3.13.0",
     "mathjs": "^15.0.0",
