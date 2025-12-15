@@ -1,6 +1,33 @@
 ---
+import { Image } from 'astro:assets';
 import AnimatedContent from '../components/AnimatedContent.jsx';
+
+import sumbuThumb from '../assets/sumbucardthumbnail.png';
+import sumbuSticker1 from '../assets/sumbucardsticker1.png';
+import sumbuSticker2 from '../assets/sumbucardsticker2.png';
+import sumbuSticker3 from '../assets/sumbucardsticker3.png';
+import sumbuSticker4 from '../assets/sumbucardsticker4.png';
+import sumbuSticker5 from '../assets/sumbucardsticker5.png';
+import sumbuSticker6 from '../assets/sumbucardsticker6.png';
+
+import basmiThumb from '../assets/basmicardthumbnail.png';
+import basmiSticker1 from '../assets/basmicardsticker_01.png';
+import basmiSticker2 from '../assets/basmicardsticker_02.png';
+import basmiSticker3 from '../assets/basmicardsticker_03.png';
+import basmiSticker4 from '../assets/basmicardsticker_04.png';
+import basmiSticker5 from '../assets/basmicardsticker_05.png';
+
+import veloraThumb from '../assets/veloracardthumbnail.png';
+import veloraSticker1 from '../assets/veloracardsticker01.png';
+import veloraSticker2 from '../assets/veloracardsticker02.png';
+import veloraSticker3 from '../assets/veloracardsticker03.png';
+import veloraSticker4 from '../assets/veloracardsticker04.png';
+import veloraSticker5 from '../assets/veloracardsticker05.png';
+import veloraSticker6 from '../assets/veloracardsticker06.png';
+import veloraSticker7 from '../assets/veloracardsticker07.png';
+import veloraSticker8 from '../assets/veloracardsticker08.png';
 ---
+
 <section id="work" class="py-20 md:py-32 px-4">
   <div class="max-w-screen-xl mx-auto flex flex-col gap-12">
     <AnimatedContent
@@ -23,6 +50,7 @@ import AnimatedContent from '../components/AnimatedContent.jsx';
 
     <div class="flex flex-col gap-16 md:gap-24 lg:gap-32 w-full items-center">
 
+      {/* SUMBU CARD */}
       <AnimatedContent
         client:visible
         distance={100}
@@ -41,44 +69,16 @@ import AnimatedContent from '../components/AnimatedContent.jsx';
             href="/sumbu"
             class="group relative bg-[#F7F6F7] rounded-xl md:rounded-2xl lg:rounded-3xl p-4 md:p-6 lg:p-8 shadow-lg overflow-hidden flex flex-col items-center"
           >
-            <img
-              src="/sumbucardsticker3.png"
-              alt="Sticker Sumbu 1"
-              class="hidden md:block absolute z-0 top-25 -translate-y-1/2 left-2 md:left-4 w-32 md:w-48 xl:w-60 h-auto object-contain rotate-[2deg] transition-all duration-300 ease-out md:group-hover:translate-x-24 md:group-hover:scale-90 transition-bouncy"
-            />
-            <img
-              src="/sumbucardsticker4.png"
-              alt="Sticker Sumbu 2"
-              class="hidden md:block absolute z-0 top-30 -translate-y-1/2 left-2 md:left-4 w-32 md:w-48 xl:w-60 h-auto object-contain rotate-[4deg] transition-all duration-300 ease-out md:group-hover:translate-x-24 md:group-hover:scale-90 transition-bouncy"
-            />
-            <img
-              src="/sumbucardsticker5.png"
-              alt="Sticker Sumbu 3"
-              class="hidden md:block absolute z-0 top-1/2 -translate-y-1/2 left-2 md:left-4 w-32 md:w-48 xl:w-60 h-auto object-contain -rotate-[10deg] transition-all duration-300 ease-out md:group-hover:translate-x-24 md:group-hover:scale-90 transition-bouncy"
-            />
-            <img
-              src="/sumbucardsticker2.png"
-              alt="Sticker Sumbu 4"
-              class="hidden md:block absolute z-0 top-45 -translate-y-1/2 right-2 md:right-4 w-36 md:w-52 xl:w-64 h-auto object-contain -rotate-[10deg] transition-all duration-300 ease-out md:group-hover:-translate-x-24 md:group-hover:scale-90 transition-bouncy"
-            />
-            <img
-              src="/sumbucardsticker1.png"
-              alt="Sticker Sumbu 5"
-              class="hidden md:block absolute z-0 top-60 -translate-y-1/2 right-2 md:right-4 w-36 md:w-52 xl:w-64 h-auto object-contain rotate-[10deg] transition-all duration-300 ease-out md:group-hover:-translate-x-24 md:group-hover:scale-90 transition-bouncy"
-            />
-            <img
-              src="/sumbucardsticker6.png"
-              alt="Sticker Sumbu 6"
-              class="hidden md:block absolute z-0 top-100 -translate-y-1/2 right-1 w-60 md:w-96 xl:w-120 h-auto object-contain rotate-[10deg] transition-all duration-300 ease-out md:group-hover:-translate-x-24 md:group-hover:scale-90 transition-bouncy"
-            />
+            <Image src={sumbuSticker3} alt="Sticker Sumbu 1" class="hidden md:block absolute z-0 top-25 -translate-y-1/2 left-2 md:left-4 w-32 md:w-48 xl:w-60 h-auto object-contain rotate-[2deg] transition-all duration-300 ease-out md:group-hover:translate-x-24 md:group-hover:scale-90 transition-bouncy" />
+            <Image src={sumbuSticker4} alt="Sticker Sumbu 2" class="hidden md:block absolute z-0 top-30 -translate-y-1/2 left-2 md:left-4 w-32 md:w-48 xl:w-60 h-auto object-contain rotate-[4deg] transition-all duration-300 ease-out md:group-hover:translate-x-24 md:group-hover:scale-90 transition-bouncy" />
+            <Image src={sumbuSticker5} alt="Sticker Sumbu 3" class="hidden md:block absolute z-0 top-1/2 -translate-y-1/2 left-2 md:left-4 w-32 md:w-48 xl:w-60 h-auto object-contain -rotate-[10deg] transition-all duration-300 ease-out md:group-hover:translate-x-24 md:group-hover:scale-90 transition-bouncy" />
+            <Image src={sumbuSticker2} alt="Sticker Sumbu 4" class="hidden md:block absolute z-0 top-45 -translate-y-1/2 right-2 md:right-4 w-36 md:w-52 xl:w-64 h-auto object-contain -rotate-[10deg] transition-all duration-300 ease-out md:group-hover:-translate-x-24 md:group-hover:scale-90 transition-bouncy" />
+            <Image src={sumbuSticker1} alt="Sticker Sumbu 5" class="hidden md:block absolute z-0 top-60 -translate-y-1/2 right-2 md:right-4 w-36 md:w-52 xl:w-64 h-auto object-contain rotate-[10deg] transition-all duration-300 ease-out md:group-hover:-translate-x-24 md:group-hover:scale-90 transition-bouncy" />
+            <Image src={sumbuSticker6} alt="Sticker Sumbu 6" class="hidden md:block absolute z-0 top-100 -translate-y-1/2 right-1 w-60 md:w-96 xl:w-120 h-auto object-contain rotate-[10deg] transition-all duration-300 ease-out md:group-hover:-translate-x-24 md:group-hover:scale-90 transition-bouncy" />
             
             <div class="relative z-10 flex flex-col items-center w-full max-w-2xl">
               <div class="w-full flex items-center justify-center">
-                <img
-                  src="/sumbucardthumbnail.png"
-                  alt="Sumbu"
-                  class="rounded-lg w-full h-auto object-contain transition-transform duration-300 ease-in-out md:group-hover:scale-105"            
-                />
+                <Image src={sumbuThumb} alt="Sumbu" class="rounded-lg w-full h-auto object-contain transition-transform duration-300 ease-in-out md:group-hover:scale-105" />
               </div>
               <div class="w-full text-center mt-6">
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4">
@@ -128,39 +128,15 @@ import AnimatedContent from '../components/AnimatedContent.jsx';
             href=""
             class="group relative bg-[#F7F6F7] rounded-xl md:rounded-2xl lg:rounded-3xl md:h-auto p-4 md:p-6 lg:p-8 shadow-lg overflow-hidden flex flex-col items-center"
           >
-            <img
-              src="/basmicardsticker_03.png"
-              alt="misi_card01"
-              class="hidden lg:block absolute z-0 top-47 -translate-y-15 left-46 w-56 xl:w-70 h-auto object-contain rotate-[10deg] transition-all duration-300 ease-out group-hover:translate-x-26 group-hover:-translate-y-10 group-hover:scale-90 transition-bouncy"
-            />
-            <img
-              src="/basmicardsticker_04.png"
-              alt="misi_card02"
-              class="hidden lg:block absolute z-0 top-55 -translate-y-18 left-41 w-56 xl:w-70 h-auto object-contain rotate-[8deg] transition-all duration-300 ease-out group-hover:translate-x-30 group-hover:-translate-y-30 group-hover:-rotate-2 group-hover:scale-90 transition-bouncy"
-            />
-            <img
-              src="/basmicardsticker_05.png"
-              alt="map"
-              class="hidden lg:block absolute z-0 top-75 -translate-y-1/2 left-36 w-64 xl:w-80 h-auto object-contain rotate-[2deg] transition-all duration-300 ease-out group-hover:translate-x-34 group-hover:-rotate-10 group-hover:scale-80 transition-bouncy"
-            />
-            <img
-              src="/basmicardsticker_02.png"
-              alt="kertas_gambar"
-              class="hidden lg:block absolute z-0 top-75 -translate-y-1/2 right-60 w-72 xl:w-90 h-auto object-contain -rotate-[10deg] transition-all duration-300 ease-out group-hover:-translate-x-16 group-hover:-rotate-0 group-hover:scale-90 transition-bouncy"
-            />
-            <img
-              src="/basmicardsticker_01.png"
-              alt="sticky_notes"
-              class="hidden lg:block absolute z-0 top-30 -translate-y-1/4 right-50 w-52 xl:w-64 h-auto object-contain rotate-[10deg] transition-all duration-300 ease-out group-hover:-translate-x-17 group-hover:scale-85 transition-bouncy"
-            />
+            <Image src={basmiSticker3} alt="misi_card01" class="hidden lg:block absolute z-0 top-47 -translate-y-15 left-46 w-56 xl:w-70 h-auto object-contain rotate-[10deg] transition-all duration-300 ease-out group-hover:translate-x-26 group-hover:-translate-y-10 group-hover:scale-90 transition-bouncy" />
+            <Image src={basmiSticker4} alt="misi_card02" class="hidden lg:block absolute z-0 top-55 -translate-y-18 left-41 w-56 xl:w-70 h-auto object-contain rotate-[8deg] transition-all duration-300 ease-out group-hover:translate-x-30 group-hover:-translate-y-30 group-hover:-rotate-2 group-hover:scale-90 transition-bouncy" />
+            <Image src={basmiSticker5} alt="map" class="hidden lg:block absolute z-0 top-75 -translate-y-1/2 left-36 w-64 xl:w-80 h-auto object-contain rotate-[2deg] transition-all duration-300 ease-out group-hover:translate-x-34 group-hover:-rotate-10 group-hover:scale-80 transition-bouncy" />
+            <Image src={basmiSticker2} alt="kertas_gambar" class="hidden lg:block absolute z-0 top-75 -translate-y-1/2 right-60 w-72 xl:w-90 h-auto object-contain -rotate-[10deg] transition-all duration-300 ease-out group-hover:-translate-x-16 group-hover:-rotate-0 group-hover:scale-90 transition-bouncy" />
+            <Image src={basmiSticker1} alt="sticky_notes" class="hidden lg:block absolute z-0 top-30 -translate-y-1/4 right-50 w-52 xl:w-64 h-auto object-contain rotate-[10deg] transition-all duration-300 ease-out group-hover:-translate-x-17 group-hover:scale-85 transition-bouncy" />
 
              <div class="relative z-10 flex flex-col items-center w-full max-w-2xl">
               <div class="w-full aspect-[9/16] md:aspect-auto flex items-center justify-center">
-                <img
-                  src="/basmicardthumbnail.png"
-                  alt="BASMI UI"
-                  class="rounded-lg w-full h-full md:h-auto object-cover md:object-contain transition-transform duration-300 ease-in-out md:group-hover:scale-105"            
-                />
+                <Image src={basmiThumb} alt="BASMI UI" class="rounded-lg w-full h-full md:h-auto object-cover md:object-contain transition-transform duration-300 ease-in-out md:group-hover:scale-105" />
               </div>
               <div class="w-full text-center px-6 pb-6 md:px-0 md:pb-0 md:mt-6">
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4">
@@ -210,54 +186,18 @@ import AnimatedContent from '../components/AnimatedContent.jsx';
             href=""
             class="group relative bg-[#F7F6F7] rounded-xl md:rounded-2xl lg:rounded-3xl md:h-auto p-4 md:p-6 lg:p-8 shadow-lg overflow-hidden flex flex-col items-center"
           >
-            <img
-              src="/veloracardsticker08.png"
-              alt="food_card01"
-              class="hidden lg:block absolute z-0 top-47 -translate-y-15 left-40 w-64 xl:w-80 h-auto object-contain rotate-[4deg] transition-all duration-300 ease-out group-hover:translate-x-32 group-hover:-translate-y-18 group-hover:rotate-1 group-hover:scale-90 transition-bouncy"
-            />
-            <img
-              src="/veloracardsticker04.png"
-              alt="tag01"
-              class="hidden lg:block absolute z-0 top-62.5 -translate-y-1/2 left-15 w-72 xl:w-90 h-auto object-contain rotate-[4deg] transition-all duration-300 ease-out group-hover:translate-x-53 group-hover:scale-80 transition-bouncy"
-            />
-            <img
-              src="/veloracardsticker07.png"
-              alt="food_card02"
-              class="hidden lg:block absolute z-0 top-55 -translate-y-18 left-36 w-64 xl:w-80 h-auto object-contain rotate-[2deg] transition-all duration-300 ease-out group-hover:translate-x-36 group-hover:-translate-y-30 group-hover:rotate-8 group-hover:scale-90 transition-bouncy"
-            />
-            <img
-              src="/veloracardsticker01.png"
-              alt="chat01"
-              class="hidden lg:block absolute z-0 top-75 -translate-y-1/2 left-36 w-80 xl:w-100 h-auto object-contain rotate-[1deg] transition-all duration-300 ease-out group-hover:translate-x-40 group-hover:-rotate-3 transition-bouncy"
-            />
-            <img
-              src="/veloracardsticker06.png"
-              alt="info_card01"
-              class="hidden lg:block absolute z-0 top-80 -translate-y-1/2 right-30 w-64 xl:w-80 h-auto object-contain rotate-[2deg] transition-all duration-300 ease-out group-hover:-translate-x-50 group-hover:scale-90 transition-bouncy"
-            />
-            <img
-              src="/veloracardsticker05.png"
-              alt="info_card02"
-              class="hidden lg:block absolute z-0 top-62.5 -translate-y-1/4 right-20 w-64 xl:w-80 h-auto object-contain -rotate-[2deg] transition-all duration-300 ease-out group-hover:-translate-x-50 group-hover:-rotate-[10deg] group-hover:scale-80 transition-bouncy"
-            />
-            <img
-              src="/veloracardsticker03.png"
-              alt="tag02"
-              class="hidden lg:block absolute z-0 top-52 -translate-y-1/2 right-40 w-72 xl:w-90 h-auto object-contain -rotate-[5deg] transition-all duration-300 ease-out group-hover:-translate-x-50 group-hover:-rotate-0 group-hover:scale-80 transition-bouncy"
-            />
-            <img
-              src="/veloracardsticker02.png"
-              alt="chat02"
-              class="hidden lg:block absolute z-0 top-50 -translate-y-1/4 right-25 w-80 xl:w-100 h-auto object-contain rotate-[2deg] transition-all duration-300 ease-out group-hover:-translate-x-50 group-hover:scale-85 transition-bouncy"
-            />
+            <Image src={veloraSticker8} alt="food_card01" class="hidden lg:block absolute z-0 top-47 -translate-y-15 left-40 w-64 xl:w-80 h-auto object-contain rotate-[4deg] transition-all duration-300 ease-out group-hover:translate-x-32 group-hover:-translate-y-18 group-hover:rotate-1 group-hover:scale-90 transition-bouncy" />
+            <Image src={veloraSticker4} alt="tag01" class="hidden lg:block absolute z-0 top-62.5 -translate-y-1/2 left-15 w-72 xl:w-90 h-auto object-contain rotate-[4deg] transition-all duration-300 ease-out group-hover:translate-x-53 group-hover:scale-80 transition-bouncy" />
+            <Image src={veloraSticker7} alt="food_card02" class="hidden lg:block absolute z-0 top-55 -translate-y-18 left-36 w-64 xl:w-80 h-auto object-contain rotate-[2deg] transition-all duration-300 ease-out group-hover:translate-x-36 group-hover:-translate-y-30 group-hover:rotate-8 group-hover:scale-90 transition-bouncy" />
+            <Image src={veloraSticker1} alt="chat01" class="hidden lg:block absolute z-0 top-75 -translate-y-1/2 left-36 w-80 xl:w-100 h-auto object-contain rotate-[1deg] transition-all duration-300 ease-out group-hover:translate-x-40 group-hover:-rotate-3 transition-bouncy" />
+            <Image src={veloraSticker6} alt="info_card01" class="hidden lg:block absolute z-0 top-80 -translate-y-1/2 right-30 w-64 xl:w-80 h-auto object-contain rotate-[2deg] transition-all duration-300 ease-out group-hover:-translate-x-50 group-hover:scale-90 transition-bouncy" />
+            <Image src={veloraSticker5} alt="info_card02" class="hidden lg:block absolute z-0 top-62.5 -translate-y-1/4 right-20 w-64 xl:w-80 h-auto object-contain -rotate-[2deg] transition-all duration-300 ease-out group-hover:-translate-x-50 group-hover:-rotate-[10deg] group-hover:scale-80 transition-bouncy" />
+            <Image src={veloraSticker3} alt="tag02" class="hidden lg:block absolute z-0 top-52 -translate-y-1/2 right-40 w-72 xl:w-90 h-auto object-contain -rotate-[5deg] transition-all duration-300 ease-out group-hover:-translate-x-50 group-hover:-rotate-0 group-hover:scale-80 transition-bouncy" />
+            <Image src={veloraSticker2} alt="chat02" class="hidden lg:block absolute z-0 top-50 -translate-y-1/4 right-25 w-80 xl:w-100 h-auto object-contain rotate-[2deg] transition-all duration-300 ease-out group-hover:-translate-x-50 group-hover:scale-85 transition-bouncy" />
 
             <div class="relative z-10 flex flex-col items-center w-full max-w-2xl">
               <div class="w-full aspect-[9/16] md:aspect-auto flex items-center justify-center md:p-0">
-                <img
-                  src="/veloracardthumbnail.png"
-                  alt="Velora UI"
-                  class="rounded-lg w-full h-full md:h-auto object-cover md:object-contain transition-transform duration-300 ease-in-out md:group-hover:scale-105"            
-                />
+                <Image src={veloraThumb} alt="Velora UI" class="rounded-lg w-full h-full md:h-auto object-cover md:object-contain transition-transform duration-300 ease-in-out md:group-hover:scale-105" />
               </div>
               <div class="w-full text-center px-6 pb-6 md:px-0 md:pb-0 md:mt-6">
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4">

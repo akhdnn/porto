@@ -1,5 +1,12 @@
 ---
+import { Image } from 'astro:assets';
+
+// Import icon dari src/assets
+import instagramIcon from '../assets/instagram.png';
+import linkedinIcon from '../assets/linkedin.png';
+import githubIcon from '../assets/github.png';
 ---
+
 <footer class="p-4 md:p-8">
     <div class="max-w-screen-xl mx-auto bg-white/70 backdrop-blur-lg rounded-3xl p-4 md:px-6 flex flex-row justify-between items-center shadow-sm border border-gray-200/80 gap-2 md:gap-4">        
         
@@ -11,38 +18,59 @@
 
         <div class="flex items-center gap-2 flex-shrink-0">
             
+            {/* Instagram */}
             <div class="relative group flex flex-col items-center">
                 <a 
                     href="https://www.instagram.com/akhdnnn_/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="block transition-transform duration-200 ease-out -rotate-[4deg] md:group-hover:-translate-y-4 md:group-hover:-rotate-20"
                 >
-                    <img src="/instagram.png" alt="Instagram Icon" class="w-10 md:w-16 h-auto">
+                    <Image 
+                        src={instagramIcon} 
+                        alt="Instagram Icon" 
+                        class="w-10 md:w-16 h-auto object-contain"
+                    />
                 </a>
-                <span class="absolute -bottom-1 text-xs font-bold text-gray-500 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                <span class="absolute -bottom-1 text-xs font-bold text-gray-500 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                     Instagram
                 </span>
             </div>
             
+            {/* LinkedIn */}
             <div class="relative group flex flex-col items-center">
                 <a 
                     href="https://www.linkedin.com/in/naufal-akhdan-899918289/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="block transition-transform duration-200 ease-out rotate-[4deg] md:group-hover:-translate-y-4 md:group-hover:rotate-20"
                 >
-                    <img src="/linkedin.png" alt="LinkedIn Icon" class="w-10 md:w-16 h-auto">
+                    <Image 
+                        src={linkedinIcon} 
+                        alt="LinkedIn Icon" 
+                        class="w-10 md:w-16 h-auto object-contain"
+                    />
                 </a>
-                 <span class="absolute -bottom-1 text-xs font-bold text-gray-500 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                 <span class="absolute -bottom-1 text-xs font-bold text-gray-500 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                     LinkedIn
                 </span>
             </div>
 
+            {/* GitHub */}
             <div class="relative group flex flex-col items-center">
                 <a 
                     href="https://github.com/akhdnn" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="block transition-transform duration-200 ease-out rotate-[2deg] md:group-hover:-translate-y-4 md:group-hover:rotate-20"
                 >
-                    <img src="/github.png" alt="Github Icon" class="w-10 md:w-16 h-auto">
+                    <Image 
+                        src={githubIcon} 
+                        alt="Github Icon" 
+                        class="w-10 md:w-16 h-auto object-contain"
+                    />
                 </a>
-                <span class="absolute -bottom-1 text-xs font-bold text-gray-500 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                <span class="absolute -bottom-1 text-xs font-bold text-gray-500 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                     GitHub
                 </span>
             </div>

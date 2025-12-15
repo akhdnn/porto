@@ -1,18 +1,25 @@
 ---
 import BounceCards from './BounceCards.jsx';
 
+// Import gambar dari src/assets
+import photo2 from '../assets/photography2.jpeg';
+import photo from '../assets/photography.jpeg';
+import jakarta from '../assets/jakarta.jpeg';
+import personalPhoto from '../assets/personal_photo.jpeg';
+
+// Gunakan properti .src untuk mendapatkan path gambar yang sudah dioptimalkan Astro
 const images = [
-    "/photography2.jpeg",
-    "/the_beach.jpeg",
-    "/jakarta.jpeg",
-    "/personal_photo.jpeg"
+    photo2.src,
+    photo.src,
+    jakarta.src,
+    personalPhoto.src
 ];
+
 const transformStyles = [
     "rotate(6deg) translate(-180px)", 
     "rotate(-1deg) translate(-60px)",                 
     "rotate(5deg) translate(60px)",
     "rotate(-4deg) translate(180px)"
-
 ];
 ---
 <section id="about" class="py-20 md:py-32 px-4 text-gray-800">
@@ -25,10 +32,8 @@ const transformStyles = [
             containerWidth={500}
             containerHeight={250}
             animationDelay={0.5}
-     
-           animationStagger={0.1}
+            animationStagger={0.1}
             easeType="elastic.out(1, 0.5)"
-
             cardWidth={220}
             cardHeight={280}
         />

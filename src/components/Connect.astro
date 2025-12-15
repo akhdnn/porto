@@ -1,5 +1,8 @@
 ---
+import { Image } from 'astro:assets';
 import AnimatedContent from '../components/AnimatedContent.jsx';
+
+import postcardImg from '../assets/postcard3.png';
 ---
 
 <section id="connect" class="py-20 px-4 text-black">
@@ -22,7 +25,11 @@ import AnimatedContent from '../components/AnimatedContent.jsx';
         <div class="relative w-full h-60 md:h-80 flex justify-center items-center group">
             
             <div class="absolute w-full max-w-lg transition-transform duration-500 ease-out transform -rotate-5 group-hover:scale-110">
-                <img src="/postcard3.png" alt="postcard" class="w-full h-full object-cover rounded-2xl shadow-lg">
+                <Image 
+                    src={postcardImg} 
+                    alt="postcard" 
+                    class="w-full h-full object-cover rounded-2xl shadow-lg"
+                />
             </div>
             
         </div>
